@@ -28,6 +28,12 @@ public final class ExcelUtils {
     private static HSSFCell cell = null;
     private static Iterator rows = null;
     private static Iterator cells = null;
+    
+    /***
+     * This method will read the data from excel file with format .xls and store them in the list.
+     * @param FILE_NAME
+     * @return The list which consists of the data is returned.
+     */
     public static List<String> readXLSFile(String FILE_NAME) {
         try {
             in = new FileInputStream(FILE_NAME);

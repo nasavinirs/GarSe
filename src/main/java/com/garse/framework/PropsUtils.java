@@ -11,10 +11,15 @@ import java.util.Properties;
  *
  */
 public class PropsUtils {
-    private static String CONFIG_FILE = "src/test/resources/config.properties";
+    private static String CONFIG_FILE = "src/main/resources/config.properties";
     private static InputStream in = null;
     private static Properties properties = null;
 
+    /***
+     * This method reads single property from the properfies file.
+     * @param key
+     * @return returns the read property
+     */
     public static String getProperty(String key) {
         try {
             in = new FileInputStream(CONFIG_FILE);
